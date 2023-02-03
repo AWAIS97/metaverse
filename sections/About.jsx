@@ -14,7 +14,7 @@ const About = () => (
       viewport={{ once: false, amount: 0.25 }}
       className={`${styles.innerWidth} ${styles.flexCenter} flex-col mx-auto`}
     >
-      <TypingText title="| About Metaverse" textStyles="" />
+      <TypingText title="| About Metaverse" textStyles="text-center" />
 
       <motion.p
         variants={fadeIn("up", "tween", 0.2, 1)}
@@ -33,7 +33,7 @@ const About = () => (
         you can easily explore the metaverse world you want, turn your dreams
         into reality. Let's
         <span className="font-extrabold text-white">
-          explore the madness of the metaverse{" "}
+        {" "}explore the madness of the metaverse{" "}
         </span>
         by scrolling down
       </motion.p>
