@@ -9,7 +9,7 @@ const Footer = () => (
     variants={footerVariants}
     initial="hidden"
     whileInView="show"
-    className={`${styles.paddings} py-8 relative`}
+    className={`${styles.xPaddings} py-8 relative`}
   >
     <div className="footer-gradient" />
     <div className={`${styles.innerWidth} mx-auto flex flex-col gap-8`}>
@@ -32,7 +32,7 @@ const Footer = () => (
         </button>
       </div>
       <div className="flex flex-col">
-        <div className="md-[50px] h-[2px] bg-white opacity-10" />
+        <div className="mb-[50px] h-[2px] bg-white opacity-10" />
         <div className="flex items-center justify-between flex-wrap gap-4">
           <h4 className="font-extrabold text-[24px] text-white">Metaverse</h4>
           <p className="font-normal text-[14px] text-white opacity-50">
