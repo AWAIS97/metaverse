@@ -1,8 +1,9 @@
-"use client";
-import { motion } from "framer-motion";
-import { socials } from "../constants";
-import styles from "../styles";
-import { footerVariants } from "../utils/motion";
+'use client';
+
+import { motion } from 'framer-motion';
+import { socials } from '../constants';
+import styles from '../styles';
+import { footerVariants } from '../utils/motion';
 
 const Footer = () => (
   <motion.footer
@@ -39,16 +40,14 @@ const Footer = () => (
             Copyright (c) 2023 Metaverse. All rights reserved.
           </p>
           <div className="flex gap-4">
-            {socials.map((social) => {
-              return (
-                <img
-                  key={social.name}
-                  src={social.url}
-                  alt={social.name}
-                  className="w-[24px] h-[24px] object-contain cursor-pointer"
-                />
-              );
-            })}
+            {socials.map((social) => (
+              <img
+                key={social.name}
+                src={social.url}
+                alt={social.name}
+                className="w-[24px] h-[24px] object-contain cursor-pointer"
+              />
+            ))}
           </div>
         </div>
       </div>
